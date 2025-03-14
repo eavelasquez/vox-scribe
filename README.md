@@ -73,7 +73,7 @@ The transcription will be:
 ### Command-line Options
 
 ```
-usage: simple_transcribe.py [-h] [--model {tiny,base,small,medium,large}] [--language LANGUAGE]
+usage: transcribe.py [-h] [--model {tiny,base,small,medium,large}] [--language LANGUAGE]
                             [--task {transcribe,translate}] [--output OUTPUT] [--verbose]
                             audio_file
 
@@ -97,32 +97,32 @@ optional arguments:
 
 1. Basic transcription with default settings:
 ```bash
-python3 simple_transcribe.py recording.mp3
+python3 transcribe.py recording.mp3
 ```
 
 2. Use a different model size:
 ```bash
-python3 simple_transcribe.py recording.mp3 --model medium
+python3 transcribe.py recording.mp3 --model medium
 ```
 
 3. Specify a language (improves accuracy):
 ```bash
-python3 simple_transcribe.py recording.mp3 --language Spanish
+python3 transcribe.py recording.mp3 --language Spanish
 ```
 
 4. Translate to English:
 ```bash
-python3 simple_transcribe.py recording.mp3 --task translate
+python3 transcribe.py recording.mp3 --task translate
 ```
 
 5. Specify custom output file:
 ```bash
-python3 simple_transcribe.py recording.mp3 --output my_transcript.txt
+python3 transcribe.py recording.mp3 --output my_transcript.txt
 ```
 
 6. Show verbose output:
 ```bash
-python3 simple_transcribe.py recording.mp3 --verbose
+python3 transcribe.py recording.mp3 --verbose
 ```
 
 ### Models

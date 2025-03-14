@@ -65,7 +65,7 @@ def main():
         file_size = os.path.getsize(args.output) / 1024  # Size in KB
         print(f"\nAudio file saved to {args.output} ({file_size:.1f} KB)")
         print(f"\nYou can now transcribe it with:")
-        print(f"python3 simple_transcribe.py {args.output}")
+        print(f"python3 transcribe.py {args.output}")
     except Exception as e:
         print(f"\nError: {str(e)}")
         if "Language" in str(e):
