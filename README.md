@@ -43,7 +43,7 @@ choco install ffmpeg
 1. Clone this repository or download the script files:
 ```bash
 git clone <repository-url>
-cd whisper-transcription-tool
+cd vox-scribe
 ```
 
 2. Install the required Python packages:
